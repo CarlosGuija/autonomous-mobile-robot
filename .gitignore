@@ -1,0 +1,45 @@
+# ROS 2 and colcon outputs
+build/
+install/
+log/
+
+# Python bytecode, caches, environments, and packaging
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+
+# Editors and IDEs
+.vscode/
+.idea/
+cmake-build-*/
+*.sublime-project
+*.sublime-workspace
+*~
+*.swp
+*.swo
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+.cache/

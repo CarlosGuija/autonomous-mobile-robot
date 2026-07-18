@@ -1,0 +1,9 @@
+float32 angle_degrees
+float32 max_angular_speed
+---
+bool success
+string message
+float32 angle_rotated_degrees
+---
+float32 remaining_angle_degrees
+float32 current_angular_speed
