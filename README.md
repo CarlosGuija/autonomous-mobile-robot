@@ -2,9 +2,6 @@
 
 A ROS 2 workspace for learning and developing autonomous motion behaviors on the TurtleBot 4. The project provides reusable odometry-based motion controllers, custom ROS 2 actions, and a finite-state machine (FSM) that coordinates the robot to drive a square.
 
-> [!CAUTION]
-> Test motion commands in simulation first. When using real hardware, keep the robot in a clear area and be ready to stop it.
-
 ## Features
 
 - Configurable linear and angular velocity publisher
