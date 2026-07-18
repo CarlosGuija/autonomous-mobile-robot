@@ -35,19 +35,19 @@ A ROS 2 workspace for learning and developing autonomous motion behaviors on the
 
 ```mermaid
 flowchart LR
-    Operator[Operator / launch file] --> FSM[Move Square FSM]
-    FSM --> Undock[/undock action server]
-    FSM --> Drive[/custom_drive_distance]
-    FSM --> Rotate[/custom_rotate_angle]
-    Actions[turtlebot4_interfaces] -. action types .-> FSM
+    Operator["Operator / launch file"] --> FSM["Move Square FSM"]
+    FSM --> Undock["/undock action server"]
+    FSM --> Drive["/custom_drive_distance"]
+    FSM --> Rotate["/custom_rotate_angle"]
+    Actions["turtlebot4_interfaces"] -. action types .-> FSM
     Actions -. action types .-> Drive
     Actions -. action types .-> Rotate
-    Odom[/odom] --> Drive
+    Odom["/odom"] --> Drive
     Odom --> Rotate
-    Drive --> Cmd[/cmd_vel_unstamped]
+    Drive --> Cmd["/cmd_vel_unstamped"]
     Rotate --> Cmd
-    Velocity[Velocity Publisher] --> Cmd
-    Cmd --> Base[TurtleBot 4 base]
+    Velocity["Velocity Publisher"] --> Cmd
+    Cmd --> Base["TurtleBot 4 base"]
 ```
 
 The standalone controllers and velocity publisher are useful for individual experiments. The `move_square` node uses the action servers instead, sequencing undocking, translation, and rotation without embedding the low-level controller logic in the FSM.
